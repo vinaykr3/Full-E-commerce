@@ -33,7 +33,7 @@ const Header = () => {
               </button>
             </div>
             <div className={`navbar-collapse collapse grow items-center lg:h-auto transition-all ${toggle ? "h-auto" : "h-0"}`} id="navbarSupportedContentY">
-              <ul className="navbar-nav mr-auto lg:flex lg:flex-row">
+              <ul className={`navbar-nav mr-auto ${toggle ? "block" : "hidden"}  lg:flex lg:flex-row`}>
                 <li className="nav-item">
                   <Link to="/">
                   <a className="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-blue-600 focus:text-gray-700 transition duration-150 ease-in-out font-semibold"
